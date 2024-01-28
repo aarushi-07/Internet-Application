@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact</title>
+<link href="index.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="header">
+    <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="classes.html">Classes</a></li>
+       <li><a href="schedule.html">Schedule</a></li>
+       <li><a href="contact.html">Contact</a></li>
+    </ul>
+ </div>
+ 
+<div class="imageContainer" >
+	<img style="height:200px" src="../images/sunrise.jpg"/>
+	<div style = "top:5%;left: 10%;" class="imageText"><h1>Path of light yoga studio</h1></div>
+</div>
+  
+
+<div class = "innerContent">
+	<h1> Contact Path of Light Yoga Studio </h1>
+	Required fields are marked with an asterisk * <br><br>
+	<div class = "formsBox">
+	<form id = "myForm">
+		<table>
+				<tr>
+					<td><label for="name">*Name</label></td>
+					<td><input type="text" id="name" name="name" required></td>
+				</tr>
+				<tr>
+					<td><label for="email">*E-mail</label></td>
+					<td><input type="email" id="email" name="email" required></td>
+				</tr>
+				<tr>
+					<td><label for="reference">Reffered by?</label></td>
+					<td><input type="text" id="reference" name="reference"></td>
+				</tr>
+				<tr>
+					<td><label for="comments">*Comments</label></td>
+					<td><input type="textbox" id="comments" name="comments" required></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Submit" ></td>
+				</tr>
+				</table>
+		</form>	
+		</div>
+
+	<div class = "copyright">
+		Copyright &#169 2022 Path of Light Yoga Studio<br>
+		<a href="yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+	</div>
+	
+</div>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Form Submitted!");
+    window.location.href = "contact.html";
+});
+</script>
+
+</body>
+</html>
